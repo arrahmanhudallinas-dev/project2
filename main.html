@@ -28,7 +28,6 @@
 <main>
     <!-- DASHBOARD -->
    <section id="dashboard" class="page">
-
             <div class="page-title">
                 <h2>Dashboard</h2>
                 <p>Ringkasan data nilai siswa</p>
@@ -43,7 +42,6 @@
                         <h2 id="stat-total">0</h2>
                     </div>
                 </div>
-
 
                 <div class="stat-card">
                     <div class="icon green">
@@ -79,7 +77,6 @@
             </section>
 
             <section class="dashboard-content">
-
                 <div class="info-card">
                     <i class="fa-solid fa-pen-to-square"></i>
                     <h3>Input Nilai</h3>
@@ -94,24 +91,17 @@
 
                 <div class="info-card">
                     <i class="fa-solid fa-table"></i>
-
                     <h3>Daftar Nilai</h3>
-
                     <p>
                         Lihat dan kelola seluruh data nilai siswa.
                     </p>
-
                     <button onclick="showPage('daftar')">
                         Lihat Daftar
                     </button>
                 </div>
             </section>
         </section>
-
-        <!-- ========================= -->
-        <!-- TAMPILAN 2 : INPUT NILAI -->
-        <!-- ========================= -->
-
+        <!--INPUT NILAI -->
         <section id="input" class="page hidden">
 
             <div class="page-title">
@@ -131,17 +121,9 @@
 
 
                     <form id="grade-form">
-
                         <label>Nama Siswa</label>
-
                         <input
-                            type="text"
-                            id="student-name"
-                            placeholder="Masukkan nama siswa"
-                            required
-                        >
-
-
+                            type="text" id="student-name" placeholder="Masukkan nama siswa" required>
                         <label>Mata Pelajaran</label>
 
                         <select id="subject-name" required>
@@ -175,63 +157,38 @@
                             </option>
 
                         </select>
-
-
                         <label>Nilai</label>
 
                         <input
-                            type="number"
-                            id="score-input"
-                            min="0"
-                            max="100"
-                            placeholder="Masukkan nilai 0-100"
-                            required
-                        >
-
-
+                            type="number" id="score-input" min="0" max="100" placeholder="Masukkan nilai 0-100" required >
                         <button type="submit">
                             <i class="fa-solid fa-plus"></i>
                             Tambah Nilai
                         </button>
-
                     </form>
-
                 </div>
 
 
                 <!-- KATEGORI -->
 
                 <div class="card kategori">
-
                     <h2>Kategori Nilai</h2>
-
                     <p>
-                        <span class="badge badge-a">A</span>
-                        85 - 100 : Sangat Baik
+                        <span class="badge badge-a">A</span>85 - 100 : Sangat Baik
                     </p>
-
                     <p>
-                        <span class="badge badge-b">B</span>
-                        75 - 84 : Baik
+                        <span class="badge badge-b">B</span>75 - 84 : Baik
                     </p>
-
                     <p>
-                        <span class="badge badge-c">C</span>
-                        65 - 74 : Cukup
+                        <span class="badge badge-c">C</span>65 - 74 : Cukup
                     </p>
-
                     <p>
-                        <span class="badge badge-d">D</span>
-                        50 - 64 : Kurang
+                        <span class="badge badge-d">D</span>50 - 64 : Kurang
                     </p>
-
                     <p>
-                        <span class="badge badge-e">E</span>
-                        0 - 49 : Sangat Kurang
+                        <span class="badge badge-e">E</span>0 - 49 : Sangat Kurang
                     </p>
-
                 </div>
-
             </div>
 
 
@@ -242,41 +199,27 @@
 
         </section>
 
-
-        <!-- ========================= -->
-        <!-- TAMPILAN 3 : DAFTAR NILAI -->
-        <!-- ========================= -->
+        <!-- DAFTAR NILAI -->
 
         <section id="daftar" class="page hidden">
-
             <div class="page-title">
                 <h2>Daftar Nilai</h2>
                 <p>Data nilai seluruh siswa</p>
             </div>
 
-
             <div class="card">
 
                 <div class="table-header">
-
                     <h2>
                         <i class="fa-solid fa-table"></i>
                         Data Nilai Siswa
                     </h2>
-
-                    <input
-                        type="text"
-                        id="search-input"
-                        placeholder="Cari siswa"
-                    >
-
+                    <input type="text" id="search-input" placeholder="Cari siswa">
                 </div>
 
 
                 <div class="table-container">
-
                     <table>
-
                         <thead>
                             <tr>
                                 <th>No</th>
@@ -287,35 +230,22 @@
                                 <th>Aksi</th>
                             </tr>
                         </thead>
-
                         <tbody id="grade-table-body"></tbody>
-
                     </table>
-
                 </div>
 
-
                 <div id="empty-state" class="empty hidden">
-
                     <i class="fa-solid fa-folder-open"></i>
-
                     <p>
                         Belum ada data nilai.
                     </p>
-
                 </div>
-
             </div>
-
-
             <button class="back-button" onclick="showPage('dashboard')">
                 <i class="fa-solid fa-arrow-left"></i>
                 Kembali ke Dashboard
             </button>
-
         </section>
-
-
 </main>
 <footer>
     <p>2026 NilaiKita | Statistika Nilai siswa</p>
