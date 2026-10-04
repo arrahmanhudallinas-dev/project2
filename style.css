@@ -221,3 +221,51 @@ background-color: #4d8b47;
     background-color: #ffe4e6;
     color: #be123c;
 }
+
+/* TABLE */
+
+.table-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.table-header h2 {
+    flex: 1;
+}
+
+#search-inpu{
+    padding: 9px 12px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    outline: none;
+}
+
+#seacch-input:focus{
+    border-color: #5fa157;
+}
+.table-container{
+    overflow-x: auto;
+}
+table {
+width: 100%;
+border-collapse: collapse;
+}
+
+th,
+td {
+padding: 12px;
+border-bottom: 1px solid #eee;
+text-align: left;
+font-size: 14px;
+}
+
+th {
+background-color: #f1f5f9;
+color: #64748b;
+}
+
+tr:hover {
+background-color: #f8fafc;
+}
