@@ -80,3 +80,28 @@ nav a:hover{
 .stat-card h2 {
     font-size: 30px;
 }
+
+/* ICON */
+
+.icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+}
+.blue {
+    background-color: #3b82f6;
+}
+.green{
+    background-color: #10b981;
+}
+.orange{
+    background-color: #f59e0b;
+}
+.red{
+    background-color: #f43f5e;
+}
