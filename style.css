@@ -305,3 +305,45 @@ footer{
     color: #64748b;
     font-size: 14px;
 }
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+.dashboard {
+    grid-template-columns: repeat(2, 1fr);
+
+    padding: 0 20px;
+}
+
+.content {
+    grid-template-columns: 1fr;
+
+    padding: 0 20px;
+}
+}
+
+@media (max-width: 600px) {
+.navbar-content {
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+nav {
+    gap: 15px;
+}
+
+.dashboard {
+    grid-template-columns: 1fr;
+}
+
+.table-header {
+    flex-direction: column;
+
+    align-items: stretch;
+}
+
+#search-input {
+    width: 100%;
+}
+}
