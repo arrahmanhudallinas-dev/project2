@@ -192,7 +192,12 @@ gradeForm.addEventListener("submit", function(event) {
         category: tentukanNilai(nilai)
     };
     gradeData.push(dataBaru);
-    alert("Data siswa berhasil ditambahkan!");
+    Swal.fire({
+        title: "Berhasil",
+        text: "Data siswa berhasil ditambahkan.",
+        icon: "success",
+        confirmButtonText: "OK"
+    });
     gradeForm.reset();
     renderTable(gradeData);
     // setelah menambah langsung ke daftar nilai
