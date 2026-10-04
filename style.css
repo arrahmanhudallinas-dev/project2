@@ -269,3 +269,39 @@ color: #64748b;
 tr:hover {
 background-color: #f8fafc;
 }
+
+/* TOMBOL HAPUS */
+
+.btn-delete {
+background-color: #fee2e2;
+color: #ef4444;
+border: none;
+padding: 7px 10px;
+border-radius: 6px;
+cursor: pointer;
+}
+.btn-delete:hover {
+background-color: #fecaca;
+}
+
+/* DATA KOSONG */
+.empty{
+    text-align: center;
+    padding: 40px;
+    color: #64748b;
+}
+.empty i {
+    font-size:  40px;
+    margin-borrom: 10px;
+}
+
+/* FOOTER */
+footer{
+    margin-top: 40px;
+    background-color: white;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    padding: 20px;
+    color: #64748b;
+    font-size: 14px;
+}
