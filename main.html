@@ -73,12 +73,94 @@
     <section class="content">
         <!-- input nilai -->
          <div id="input-section" class="card">
-            
+            <h2>
+                <i class="fa-solid fa-pen-to-square"></i>
+                Input Nilai
+            </h2>
+
+            <form id="grade-form">
+                <input type="text" id="student-name" placeholder="Masukkan nama siswa" required>
+                <label>Mata Pelajaran</label>
+                <select id="subject-name" required>
+                    <option value="" disabled selected>
+                        Pilih mata pelajaran
+                    </option>
+                    <option value="Matematika">
+                        Matematika
+                    </option>
+                    <option value="Bahasa Indonesia">
+                        Bahasa Indonesia
+                    </option>
+                    <option value="Bahasa Inggris">
+                        Bahasa Inggris
+                    </option>
+                    <option value="IPA">
+                        IPA
+                    </option>
+                    <option value="IPS">
+                        IPS
+                    </option>
+                    <option value="Pemprograman Web">
+                        Pemprograman Web
+                    </option>
+                </select>
+                <!-- INPUT -->
+                <label>Nilai</label>
+
+                <input type="number" id="score-input" min="0" max="100" placeholder="Masukkan nilai 0-100" required>
+                <button type="submit">
+                    <i class="fa-solid fa-plus"></i>
+                    Tambah Nilai
+                </button>
+            </form>
+            <!-- KATEGORI -->
+             <div class="kategori">
+                <h3>Kategori Nilai</h3>
+                <p><span class="badge badge-a">A</span> 85 - 100 : Sangat Baik</p>
+                <p><span class="badge badge-a">B</span> 75 - 85 : Baik</p>
+                <p><span class="badge badge-c">C</span> 65 - 74 : Cukup</p>
+                <p><span class="badge badge-d">D</span> 50 - 64 : Kurang</p>
+                <p><span class="badge badge-e">E</span> 0 - 49 : Sangat Kurang</p>
+             </div>
          </div>
+
+
+         <!-- Daftar Nilai -->
+          <div id="list-section" class="card">
+            <div class="table-header">
+                <h2>
+                    <i class="fa-solid fa-table"></i>
+                    Daftar Nilai
+                </h2>
+                <input type="text" id="search-input" placeholder="Cari siswa">
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nama</th>
+                            <th>Mata Pelajaran</th>
+                            <th>Nilai</th>
+                            <th>Kategori</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody id="grade-table-body"></tbody>
+                </table>
+            </div>
+            <div id="empty-state" class="empty hidden">
+                <i class="fa-solid fa-folder-opeh"></i>
+                <p> Belum ada data nilai.</p>
+            </div>
+          </div>
     </section>
 
 
 </main>
-    
+<footer>
+    <p>2026 NilaiKita | Statistika Nilai siswa</p>
+</footer>
+<script src="projek.js"
 </body>
 </html>
