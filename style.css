@@ -176,3 +176,48 @@ form button:hover {
 background-color: #4d8b47;
 }
 
+/* KATEGORI */
+
+.kategori{
+    border-top: 1px dashed #ddd;
+    margin-top: ;
+    padding: top 20px;
+}
+.kategori h3{
+    font-size: 15px;
+    margin-bottom: 12px;
+    color: ;
+}
+
+.kategori p{
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+/* BADGE */
+
+.badge{
+    display: center;
+    min-width: center;
+    padding: 4px 8px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+.badge-a {
+    background-color: #d1fae5;
+    color: #047857;
+}
+.badge-b {
+    background-color: #dbeafe;
+    color: #b45309;
+}
+.badge-c {
+    background-color: #fef3c7;
+    color: #b45309;
+}
+.badge-e{
+    background-color: #ffe4e6;
+    color: #be123c;
+}
