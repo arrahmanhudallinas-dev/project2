@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f7fb;
+    color: #1e293b
+}
+
+/* BAGIAN NAVBAR */
+
+.navbar{
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    padding: 18px 30px;
+}
+
+.navbar-content {
+    max-width: 1200px;
+    margin: auto;
+
+    display: flax;
+    justify-content: space-between;
+    align-items: center;
+}
