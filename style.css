@@ -7,7 +7,7 @@
 
 body {
     background-color: #f5f7fb;
-    color: #1e293b
+    color: #1e293b;
 }
 
 /* BAGIAN NAVBAR */
@@ -22,7 +22,7 @@ body {
     max-width: 1200px;
     margin: auto;
 
-    display: flax;
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -180,13 +180,13 @@ background-color: #4d8b47;
 
 .kategori{
     border-top: 1px dashed #ddd;
-    margin-top: ;
-    padding: top 20px;
+    margin-top: 25px;
+    padding-top: 20px;
 }
 .kategori h3{
     font-size: 15px;
     margin-bottom: 12px;
-    color: ;
+    color: #64748b;
 }
 
 .kategori p{
@@ -197,8 +197,8 @@ background-color: #4d8b47;
 /* BADGE */
 
 .badge{
-    display: center;
-    min-width: center;
+    display: inline-block;
+    min-width: 28px;
     padding: 4px 8px;
     border-radius: 15px;
     font-size: 12px;
@@ -217,6 +217,11 @@ background-color: #4d8b47;
     background-color: #fef3c7;
     color: #b45309;
 }
+.badge-d {
+background-color: #ffedd5;
+color: #c2410c;
+}
+
 .badge-e{
     background-color: #ffe4e6;
     color: #be123c;
@@ -235,14 +240,14 @@ background-color: #4d8b47;
     flex: 1;
 }
 
-#search-inpu{
+#search-input{
     padding: 9px 12px;
     border: 1px solid #ddd;
     border-radius: 7px;
     outline: none;
 }
 
-#seacch-input:focus{
+#search-input:focus{
     border-color: #5fa157;
 }
 .table-container{
@@ -292,7 +297,7 @@ background-color: #fecaca;
 }
 .empty i {
     font-size:  40px;
-    margin-borrom: 10px;
+    margin-bottom: 10px;
 }
 
 /* FOOTER */
@@ -330,6 +335,7 @@ footer{
 }
 
 nav {
+    display: flex;
     gap: 15px;
 }
 
@@ -346,4 +352,8 @@ nav {
 #search-input {
     width: 100%;
 }
+}
+
+.hidden {
+    display: none;
 }
